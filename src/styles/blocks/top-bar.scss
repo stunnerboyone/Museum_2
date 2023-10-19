@@ -1,0 +1,79 @@
+.top-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 20px;
+
+  @include onDesktop {
+    padding-block: 26px;
+  }
+
+  &__logo {
+    height: 37px;
+  }
+
+  &__logo-link {
+    display: flex;
+
+    @include hover(transform, scale(1.2));
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    max-height: 22px;
+
+    @include onTablet {
+      gap: 40px;
+    }
+  }
+
+  &__language {
+    display: none;
+    position: relative;
+    width: 35px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    color: $color-main-accent;
+    @extend %button-text;
+    font-weight: 500;
+    line-height: 150%;
+
+    @include onTablet {
+      display: inline-block;
+    }
+
+    &:after {
+      content: "";
+      width: 10px;
+      height: 7px;
+      background: url("../images/icons/dropdown.svg") no-repeat;
+      color: $color-main-accent;
+      top: 9px;
+      left: 25px;
+      position: absolute;
+      display: inline-block;
+    }
+
+    &--mobile {
+      display: inline-block;
+
+      @include onTablet {
+        display: none;
+      }
+    }
+  }
+
+
+
+  &--mobile {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $color-background-accent;
+  }
+}

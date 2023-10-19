@@ -1,0 +1,37 @@
+.event {
+  &__content {
+    @include pageGrid;
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    grid-column: span 2;
+    box-sizing: border-box;
+    height: 358px;
+
+    @include onTablet {
+      grid-column: 1 / 4;
+      height: 422px;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 5;
+      height: 475px;;
+    }
+  }
+
+  &__info {
+    grid-column: span 2;
+    box-sizing: border-box;
+
+
+    @include onTablet {
+      grid-column: 4 / -1;
+    }
+
+    @include onDesktop {
+      grid-column: 5 / -1;
+    }
+  }
+}

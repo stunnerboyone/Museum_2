@@ -1,0 +1,12 @@
+.button {
+  align-items: center;
+  @extend %button-text;
+
+  &--main {
+    width: 280px;
+    height: 60px;
+    background-color: $color-button-default;
+    color: $color-main-accent;
+    border: none;
+  }
+}

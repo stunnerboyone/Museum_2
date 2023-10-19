@@ -1,0 +1,40 @@
+.nav {
+  &__list {
+    :not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    @extend %title;
+    color: $color-main-accent;
+    font-size: 20px;
+    line-height: 150%;
+
+    @include onTablet {
+      font-size: 48px;
+      line-height: 120%;
+    }
+
+    @include onDesktop {
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: 8px;
+        height: 1px;
+        width: 100%;
+        background-color: white;
+
+        @include default-transition(transform);
+        transform: scale(0);
+        transform-origin: left;
+      }
+
+      &:hover::after {
+        transform: scale(1);
+      }
+    }
+  }
+}

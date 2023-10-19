@@ -1,0 +1,22 @@
+.news-block {
+  &__top {
+
+  }
+
+  &__img {
+  }
+
+  &__data {
+    margin: 20px 0 10px;
+    @extend %text;
+    color: $color-button-default;
+  }
+
+  &__desc {
+    margin: 20px 0 30px;
+    @extend %text;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-gray-accent;
+  }
+}

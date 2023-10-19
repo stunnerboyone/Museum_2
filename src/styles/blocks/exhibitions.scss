@@ -1,0 +1,45 @@
+.exhibitions {
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include onTablet {
+      @include pageGrid;
+    }
+  }
+
+  &__title {
+    grid-column: span 2;
+    grid-row: 1 / 2;
+
+    @include onTablet {
+      grid-column: 1 / 5;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 6;
+    }
+  }
+
+  &__button {
+    grid-column: span 2;
+    grid-row: -1;
+  }
+
+  &__news-block{
+    margin-top: 60px;
+    flex-direction: column;
+    box-sizing: border-box;
+    grid-column: span 2;
+    grid-row: 2;
+
+    @include onTablet {
+      grid-column: span 3;
+    }
+
+    @include onDesktop {
+      grid-column: span 6;
+      grid-row: 2 / 7;
+    }
+  }
+}

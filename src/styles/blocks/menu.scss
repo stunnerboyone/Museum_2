@@ -1,0 +1,61 @@
+.menu {
+  height: 100vh;
+  background-color: $color-background-accent;
+  overflow: auto;
+  z-index: 5;
+
+  &__content {
+    @include onDesktop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 30px;
+
+    @include onTablet {
+      gap: 50px;
+    }
+  }
+
+  &__info {
+    @include onTablet {
+      display: flex;
+      gap: 125px;
+    }
+  }
+
+
+  &__text {
+    @extend %button-text;
+    line-height: 150%;
+  }
+
+  &__img {
+    display: none;
+
+    @include onTablet {
+      display: block;
+      margin: 0 auto;
+      height: 465px;
+      margin-top: 30px;
+    }
+
+    @include onDesktop {
+      max-width: 620px;
+    }
+  }
+}
+
+.divider {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: $color-main-accent;
+}

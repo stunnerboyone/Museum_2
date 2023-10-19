@@ -1,13 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>NAMU</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="images/portraits/header-woman.png"
+    >
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__top-bar top-bar menu__top">
+            <a href="#" class="header__link">
+              <img
+                src="./images/logo.png"
+                alt="NAMU"
+                class="top-bar__logo"
+              >
+            </a>
+
+            <div class="top-bar__icons">
+              <a href="#menu" class="icon icon--menu"></a>
+              <button class="top-bar__language">UA</button>
+            </div>
+          </div>
+
+          <div class="header__bottom">
+            <div class="header__wrapper">
+              <p class="header__text text-secondary">10 серпня - 10 листопада</p>
+              <h1 class="header__title">Мистецтво ХІХ - ХХ ст.</h1>
+              <div class="header__action">
+                <p>Внесок українських митців у світову культуру 19-20 ст.</p>
+                <button class="header__button button button--main">Купити квиток</button>
+              </div>
+              <div class="header__decoration">
+                <h6 class="header__data">10.08 - 10.10</h6>
+                <div class="divider"></div>
+              </div>
+            </div>
+
+            <img
+              src="./images/portraits/header-woman.png"
+              alt="header woman"
+              class="header__img"
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside class="page__menu menu" id="menu">
+      <div class="container">
+        <div class="menu">
+          <div class="top-bar menu__top">
+            <a href="#" class="top-bar__link">
+              <img
+              src="./images/logo.png"
+              alt="NAMU"
+              class="top-bar__logo"
+              >
+            </a>
+            <div class="top-bar__icons">
+              <button class="top-bar__language top-bar__language--mobile">UA</button>
+              <a href="#" class="icon icon--close"></a>
+              <button class="top-bar__language">UA</button>
+            </div>
+          </div>
+
+          <div class="menu__content">
+            <div class="menu__body">
+              <div class="menu__info">
+                <div class="menu__schedule">
+                  <p class="text-secondary">Розклад сьогодні:</p>
+                  <p class="menu__text">12:00 - 19:00</p>
+                </div>
+                <div class="menu__address">
+                  <p class="text-secondary">Адреса:</p>
+                  <p class="menu__text">Київ, вул. М. Грушевського, 6</p>
+                </div>
+              </div>
+              <div class="menu__nav nav">
+                <ul class="nav__list">
+                  <li class="nav__item"><a href="#" class="nav__link">Актуальні виставки</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">Найближчі події</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">Новини</a></li>
+                </ul>
+              </div>
+              <div class="divider"></div>
+              <button class="button button--main">Купити квиток</button>
+            </div>
+
+            <img
+            src="./images/portraits/boy-painting.png"
+            alt="header woman"
+            class="menu__img"
+            >
+          </div>
+        </div>
+      </div>
+    </aside>
+<!--
+    <main class="main">
+      <div class="main__content">
+        <section class="exhibitions container">
+          <div class="exhibitions__content">
+            <h3 class="exhibitions__title">Актуальні виставки</h3>
+
+            <button class="exhibitions__button button">
+              <a href="button__link">Архів виставок</a>
+            </button>
+
+            <div class="exhibitions__news-block news-block">
+              <img
+                src="./images/paintings/angel.png"
+                alt="picture"
+                class="news-block__img" >
+              </img>
+
+              <div class="news-block__info">
+                <p class="news-block__data">11.07 - 22.09</p>
+                <h4>Кураторська виставка “Ангели”</h4>
+                <p class="news-block__desc">Виставковий проект «Ангели» &#45 знакова подія для української культури &#1110 водночас наймасштабніший...</p>
+              </div>
+
+              <button class="news-block__button button">
+                <a href="#" class="button__link">Купити квиток</a>
+              </button>
+            </div>
+
+            <div class="exhibitions__news-block news-block">
+              <div class="news-block__photo">
+                <img
+                  src="./images/paintings/man-portrait.png"
+                  alt="picture"
+                  class="news-block__img img--default"
+                >
+              </div>
+              <p class="news-block__data">Діє постійно</p>
+              <h4>Мистецтво ХХ ст. — XXI ст.</h4>
+              <p class="news-block__desc">Знакові роботи Алли Горської, Миколи Самокиша, Федора Кричевського та інших митців.</p>
+              <button class="news-block__button button">
+                <a href="#" class="button__link">Купити квиток</a>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="upcoming-events container">
+          <h3>Найближчі події</h3>
+
+          <div class="upcoming-events__event event">
+            <div class="event__content">
+
+              <img
+                src="./images/photos/man-photo.png"
+                alt="photo"
+                class="event__img"
+              >
+
+              <div class="event__info">
+                <p class="news-block__data">14.08 о 13:00</p>
+                <h4>Кураторські екскурсії від Павла Гудімова</h4>
+                <p class="event__desc">Таємниці підготовки, історії експонатів, магія дійства до і в момент вашої присутності – розгортатиметься...</p>
+
+                <button class="event-block__button button">
+                  <a href="#" class="button__link">Зареєструватись</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="visit-us"></section>
+        <section class="news"></section>
+        <section class="subscribe"></section>
+      </div>
+    </main> -->
+    <footer class="footer"></footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
