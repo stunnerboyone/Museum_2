@@ -82,3 +82,7 @@ p {
   font-size: 14px;
   line-height: 140%;
 }
+
+.text-button {
+  @extend %button-text;
+}

@@ -17,14 +17,13 @@
 
     @include onDesktop {
       grid-column: 1 / 5;
-      height: 475px;;
+      height: 475px;
     }
   }
 
   &__info {
     grid-column: span 2;
     box-sizing: border-box;
-
 
     @include onTablet {
       grid-column: 4 / -1;

@@ -5,7 +5,7 @@
     margin-top: 50px;
 
     @include onTablet {
-    margin-top: 95px;
+      margin-top: 95px;
     }
 
     @include onDesktop {
@@ -27,7 +27,7 @@
   &__action {
     max-width: 330px;
 
-    @include onDesktop{
+    @include onDesktop {
       max-width: 100%;
     }
   }
@@ -40,7 +40,7 @@
     }
   }
 
-  &__decoration{
+  &__decoration {
     display: flex;
     justify-content: space-between;
     align-items: center;

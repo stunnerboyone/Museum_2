@@ -1,9 +1,15 @@
 .news-block {
-  &__top {
-
-  }
+  width: 100%;
 
   &__img {
+    background-image: url(../images/paintings/angel.png);
+    background-position: left;
+    background-size: cover;
+    height: 356px;
+
+    &--man{
+      background-image: url(../images/paintings/man-portrait.png);
+    }
   }
 
   &__data {
